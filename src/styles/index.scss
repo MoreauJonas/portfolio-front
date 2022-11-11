@@ -2,27 +2,20 @@
 @import "./mixins";
 @import "./settings.scss";
 
-//Components
+//Templates
+@import "./templates/Navbar.scss";
+@import "./templates/Footer.scss";
+@import "./templates/Header.scss";
 
 //Screens
-@import "./templates/Navbar.scss";
+@import "./screens/About.scss";
+@import "./screens/Profil.scss";
+@import "./screens/Skills.scss";
+@import "./screens/Work.scss";
 
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-//test sass
-
-.test {
-  color: $textColor;
+  scroll-behavior: smooth;
 }
