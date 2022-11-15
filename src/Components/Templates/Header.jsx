@@ -2,6 +2,8 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import AppWrapp from "../../wrapper/AppWrapp";
+
 import circle from "../assets/circle.svg";
 import sass from "../assets/sass.png";
 import html from "../assets/html.png";
@@ -31,7 +33,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div id="home">
+    <div>
       {profil.map((pro) => (
         <div className="app__header app__flex" key={pro.id}>
           <motion.div
@@ -97,4 +99,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrapp(Header, "home");
