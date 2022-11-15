@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
+import AppWrapp from "../wrapper/AppWrapp";
+
 import about1 from "../components/assets/about01.png";
 import about2 from "../components/assets/about02.png";
 import about3 from "../components/assets/about03.png";
@@ -53,4 +55,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrapp(About, "about");
