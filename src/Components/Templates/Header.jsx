@@ -85,8 +85,8 @@ const Header = () => {
                   src={`http://localhost:8000/${language.picture}`}
                   alt="circle"
                 />
-              </div> 
-            ))}*/}
+              </div>
+            ))} */}
             {[sass, html, js].map((el, idx) => (
               <div className="circle-cmp app__flex" key={`el-${idx}`}>
                 <img src={el} alt="circle" />
